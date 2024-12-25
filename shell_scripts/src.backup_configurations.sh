@@ -12,22 +12,27 @@ sleep 1
 # Copy key config files to ~/sbemode/config_files folder
 ## Backup emacs config
 echo ">>> Backing up emacs config (~/.emacs)"
-cp ~/.emacs ~/sbemode/code/system_code/config_files/backup.emacs.lsp
+cp ~/.emacs ~/sbemode/system_code/config_files/backup.emacs.lsp
 sleep 1
 
 ## Backup zsh config
 echo ">>> Backing up zsh config (~/.zshrc)"
-cp ~/.zshrc ~/sbemode/code/system_code/config_files/backup.zshrc
+cp ~/.zshrc ~/sbemode/system_code/config_files/backup.zshrc
 sleep 1
 
 ## Backup OhMyPosh config
 echo ">>> Backing up oh-my-posh config (~/.mytheme.omp.json)"
-cp ~/.mytheme.omp.json ~/sbemode/code/system_code/config_files/backup.mytheme.omp.json
+cp ~/.mytheme.omp.json ~/sbemode/system_code/config_files/backup.mytheme.omp.json
 sleep 1
 
 ## Backup terminal setings
 echo ">>> Backing up Terminal preferences (~/Lib/Pref/com.apple.Terminal.plist)"
-cp ~/Library/Preferences/com.apple.Terminal.plist ~/sbemode/code/system_code/config_files/backup.com.apple.Terminal.plist
+cp ~/Library/Preferences/com.apple.Terminal.plist ~/sbemode/system_code/config_files/backup.com.apple.Terminal.plist
+sleep 1
+
+## Backup Finder setings
+echo ">>> Backing up Finder preferences (~/Lib/Pref/com.apple.Terminal.plist)"
+cp ~/Library/Preferences/com.apple.finder.plist ~/sbemode/system_code/config_files/backup.com.apple.finder.plist
 sleep 1
 
 ## End of backup procedures

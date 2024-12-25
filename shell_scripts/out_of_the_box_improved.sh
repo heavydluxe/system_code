@@ -42,10 +42,11 @@ git clone https://github.com/zsh-users/zsh-autosuggestions.git ~/.oh-my-zsh/cust
 
 ## Update config files for emacs and zsh
 echo "Copying your config files to their primary locations..."
-cp ~/sbemode/code/config_files/backup.emacs.lsp ~/.emacs
-cp ~/sbemode/code/config_files/backup.zshrc ~/.zshrc
-cp ~/sbemode/code/config_files/backup.mytheme.omp.json ~/.mytheme.omp.json
-cp ~/sbemode/code/config_files/backup.com.apple.Terminal.plist ~/Library/Preferences/com.apple.Terminal.plist
+cp ~/sbemode/system_code/config_files/backup.emacs.lsp ~/.emacs
+cp ~/sbemode/system_code/config_files/backup.zshrc ~/.zshrc
+cp ~/sbemode/system_code/config_files/backup.mytheme.omp.json ~/.mytheme.omp.json
+cp ~/sbemode/system_code/config_files/backup.com.apple.Terminal.plist ~/Library/Preferences/com.apple.Terminal.plist
+cp ~/sbemode/system_code/config_files/backup.com.apple.finder.plist ~/Library/Preferences/com.apple.finder.plist 
 echo "Base environment installed."
 echo "Moving on to graphical apps."
 sleep 2
