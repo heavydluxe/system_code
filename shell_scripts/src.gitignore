@@ -1,0 +1,51 @@
+# OS-generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.log
+
+#git_me_one_time.sh script#
+# not the src. version!! #
+git_me_one_time.sh
+
+# Emacs Temp #
+#############
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# Packages #
+############
+# It's better to unpack these files and commit the raw source files.
+# git has its own built-in compression methods.
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Emacs Auto Recovery #
+######################
+"#*.*#"
