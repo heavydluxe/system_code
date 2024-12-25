@@ -12,26 +12,26 @@ sleep 1
 # Copy key config files to ~/sbemode/config_files folder
 ## Backup emacs config
 echo ">>> Backing up emacs config (~/.emacs)"
-cp ~/.emacs ~/sbemode/code/config_files/backup.emacs.lsp
+cp ~/.emacs ~/sbemode/code/system_code/config_files/backup.emacs.lsp
 sleep 1
 
 ## Backup zsh config
 echo ">>> Backing up zsh config (~/.zshrc)"
-cp ~/.zshrc ~/sbemode/code/config_files/backup.zshrc
+cp ~/.zshrc ~/sbemode/code/system_code/config_files/backup.zshrc
 sleep 1
 
 ## Backup OhMyPosh config
 echo ">>> Backing up oh-my-posh config (~/.mytheme.omp.json)"
-cp ~/.mytheme.omp.json ~/sbemode/code/config_files/backup.mytheme.omp.json
+cp ~/.mytheme.omp.json ~/sbemode/code/system_code/config_files/backup.mytheme.omp.json
 sleep 1
 
 ## Backup terminal setings
 echo ">>> Backing up Terminal preferences (~/Lib/Pref/com.apple.Terminal.plist)"
-cp ~/Library/Preferences/com.apple.Terminal.plist ~/sbemode/code/config_files/backup.com.apple.Terminal.plist
+cp ~/Library/Preferences/com.apple.Terminal.plist ~/sbemode/code/system_code/config_files/backup.com.apple.Terminal.plist
 sleep 1
 
 ## End of backup procedures
-echo "All critical configuration files backed up to /sbemode/code"
+echo "All critical configuration files backed up!"
 sleep 2
 
 ## Remove old org mode backup files

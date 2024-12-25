@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Set hostname and ComputerName
-## Prompt the user for the new hostname
+# Prompt user for the new hostname
 read -p "Enter NEW Hostname for this device: " NEW_HOSTNAME
 sudo scutil --set HostName "$NEW_HOSTNAME"
 sudo scutil --set ComputerName "$NEW_HOSTNAME"

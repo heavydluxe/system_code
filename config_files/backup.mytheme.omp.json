@@ -200,42 +200,7 @@
           "foreground": "#ffffff",
           "background": "#316ce4",
           "type": "kubectl"
-        },
-        {
-          "properties": {
-            "linux": "\ue712",
-            "macos": "\ue711",
-            "windows": "\ue70f"
-          },
-          "style": "diamond",
-          "leading_diamond": "\ue0b6",
-          "trailing_diamond": "<transparent,background>\ue0b2</>",
-          "template": " {{ if .WSL }}WSL at {{ end }}{{.Icon}} ",
-          "foreground": "#ffffff",
-          "background": "#de5a02",
-          "type": "os"
-        },
-        {
-          "properties": {
-            "charged_icon": "\uf240 ",
-            "charging_icon": "\uf1e6 ",
-            "discharging_icon": "\ue234 "
-          },
-          "style": "diamond",
-          "leading_diamond": "\ue0b2",
-          "trailing_diamond": "\ue0b4",
-          "template": " {{ if not .Error }}{{ .Icon }}{{ .Percentage }}{{ end }}{{ .Error }}\uf295 ",
-          "foreground": "#000000",
-          "powerline_symbol": "\ue0b2",
-          "background": "#43f360",
-          "type": "battery",
-          "background_templates": [
-            "{{if eq \"Charging\" .State.String}}#89ec99{{end}}",
-            "{{if eq \"Discharging\" .State.String}}#9a9d9a{{end}}",
-            "{{if eq \"Full\" .State.String}}#30f852{{end}}"
-          ],
-          "invert_powerline": true
-        }
+        } 
       ]
     },
     {
