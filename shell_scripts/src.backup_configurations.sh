@@ -31,7 +31,7 @@ cp ~/Library/Preferences/com.apple.Terminal.plist ~/sbemode/system_code/config_f
 sleep 1
 
 ## Backup Finder Preferences
-echo ">>> Backing up Finder preferences (~/Lib/Pref/com.apple.Terminal.plist)"
+echo ">>> Backing up Finder preferences (~/Lib/Pref/com.apple.finder.plist)"
 cp ~/Library/Preferences/com.apple.finder.plist ~/sbemode/system_code/config_files/backup.com.apple.finder.plist
 sleep 1
 

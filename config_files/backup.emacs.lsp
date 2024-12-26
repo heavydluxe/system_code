@@ -1,6 +1,7 @@
 ;; Set line numbers and text wrapping
 ;; (global-display-line-numbers-mode 1)
-(require 'cl-lib)
+(require 'deft)
+(require 'cl)
 (global-visual-line-mode 1)
 (menu-bar-mode -1)
 (ido-mode 1)
@@ -60,12 +61,7 @@
 (add-to-list 'package-archives
              '("melpa-stable" . "https://stable.melpa.org/packages/"))
 (package-initialize)
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
 
 ;; Custom Keybinding
 (global-set-key (kbd "C-c t") 'org-sparse-tree)
+(global-set-key (kbd "C-x C-d") 'deft)
