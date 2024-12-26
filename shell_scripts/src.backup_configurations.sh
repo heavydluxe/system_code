@@ -25,15 +25,21 @@ echo ">>> Backing up oh-my-posh config (~/.mytheme.omp.json)"
 cp ~/.mytheme.omp.json ~/sbemode/system_code/config_files/backup.mytheme.omp.json
 sleep 1
 
-## Backup terminal setings
+## Backup terminal settings
 echo ">>> Backing up Terminal preferences (~/Lib/Pref/com.apple.Terminal.plist)"
 cp ~/Library/Preferences/com.apple.Terminal.plist ~/sbemode/system_code/config_files/backup.com.apple.Terminal.plist
 sleep 1
 
-## Backup Finder setings
+## Backup Finder Preferences
 echo ">>> Backing up Finder preferences (~/Lib/Pref/com.apple.Terminal.plist)"
 cp ~/Library/Preferences/com.apple.finder.plist ~/sbemode/system_code/config_files/backup.com.apple.finder.plist
 sleep 1
+
+## Backup System Preferences
+echo ">>> Backing up System Preferences (~Lib/Pref/com.apple.systempreferences.plist)"
+cp ~/Library/Preferences/com.apple.systempreferences.plist ~/sbemode/system_code/config_files/backup.com.apple.systempreferences.plist
+sleep 1
+
 
 ## End of backup procedures
 echo "All critical configuration files backed up!"

@@ -40,13 +40,14 @@ mkdir ~/.cache
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-autosuggestions.git ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 
-## Update config files for emacs and zsh
+## Restore previous configuration files
 echo "Copying your config files to their primary locations..."
 cp ~/sbemode/system_code/config_files/backup.emacs.lsp ~/.emacs
 cp ~/sbemode/system_code/config_files/backup.zshrc ~/.zshrc
 cp ~/sbemode/system_code/config_files/backup.mytheme.omp.json ~/.mytheme.omp.json
 cp ~/sbemode/system_code/config_files/backup.com.apple.Terminal.plist ~/Library/Preferences/com.apple.Terminal.plist
 cp ~/sbemode/system_code/config_files/backup.com.apple.finder.plist ~/Library/Preferences/com.apple.finder.plist 
+cp ~/sbemode/system_code/config_files/backup.com.apple.systempreferences.plist ~/Library/Preferences/com.apple.systempreferences.plist 
 echo "Base environment installed."
 echo "Moving on to graphical apps."
 sleep 2
