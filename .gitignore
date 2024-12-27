@@ -46,6 +46,10 @@ tramp
 *.o
 *.so
 
+# My scratch files #
+####################
+zzzscratch.*
+
 # Emacs Auto Recovery #
 ######################
 "#*.*#"
