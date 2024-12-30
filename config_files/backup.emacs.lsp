@@ -38,7 +38,8 @@
 	("Steve" .?s)
 	("Team" .?t)
 	("home" .?h)
-	("church" .?c)))
+	("church" .?c)
+	("Learning" .?L)))
 
 ;; Org-mode custom agenda views
 ;; ---> Org agendas by tag
@@ -46,7 +47,9 @@
       '(("1" "Steve Meeting"
          tags-todo ":Steve:")
         ("2" "Team Meeting"
-         tags-todo ":Team:")))
+         tags-todo ":Team:")
+		 ("3" "Learning Items"
+		 tags-todo ":Learning")))
 
 ;; deft notes information
 (custom-set-variables

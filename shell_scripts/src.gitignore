@@ -46,6 +46,12 @@ tramp
 *.o
 *.so
 
+# Python-related coding #
+####################
+zzzscratch.py
+venv
+
+
 # Emacs Auto Recovery #
 ######################
 "#*.*#"
