@@ -129,7 +129,7 @@ echo "Brewing colima/docker CLIs"
 brew install colima
 sleep 1
 brew services start colima
-brew install docker
+# brew install docker
 
 # Ollama
 echo "Brewing Ollama for LLMs"
