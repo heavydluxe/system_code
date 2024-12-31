@@ -1,7 +1,8 @@
-;; Set line numbers and text wrapping
-;; (global-display-line-numbers-mode 1)
+;; Include deft load path at start and run package
+(add-to-list 'load-path "~/.deft")
 (require 'deft)
-(require 'cl)
+
+;; Do some fun line formatting
 (global-visual-line-mode 1)
 (menu-bar-mode -1)
 (ido-mode 1)
@@ -25,16 +26,16 @@
 
 ;; Orgmode colorful bits and bobs
 (setq org-todo-keyword-faces
-      '(("TODO" . (:foreground "brightwhite" :background "color-196"))
+    '(("TODO" . (:foreground "brightwhite" :background "color-196"))
 	("InProc" . (:foreground "black" :background "brightgreen"))
 	("PROJECT" . (:foreground "brightwhite" :background "color-166"))
 	("Future" . (:foreground "while" :background "color-19"))
 	("Chat" . (:foreground "black" :background "brightyellow"))
-       	("DONE" . (:foreground "brightblack" :background "black"))))
+    ("DONE" . (:foreground "brightblack" :background "black"))))
 
 ;; Org-mode tag settings
 (setq org-tag-alist
-      '(("work" .?w)
+    '(("work" .?w)
 	("Steve" .?s)
 	("Team" .?t)
 	("home" .?h)

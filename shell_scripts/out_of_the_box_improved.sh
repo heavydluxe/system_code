@@ -126,10 +126,10 @@ brew install figlet
 
 # Colima and Docker
 echo "Brewing colima/docker CLIs"
+brew install docker
 brew install colima
 sleep 1
 brew services start colima
-# brew install docker
 
 # Ollama
 echo "Brewing Ollama for LLMs"
