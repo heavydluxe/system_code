@@ -50,7 +50,7 @@ tramp
 ####################
 zzzscratch.py
 venv
-
+.venv
 
 # Emacs Auto Recovery #
 ######################
