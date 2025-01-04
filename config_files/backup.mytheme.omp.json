@@ -89,8 +89,8 @@
           "leading_diamond": "\ue0b6",
           "trailing_diamond": "\ue0b4 ",
           "template": "\ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }}",
-          "foreground": "#FFE873",
-          "background": "#306998",
+          "foreground": "#d6be35",
+          "background": "#104876",
           "type": "python"
         },
         {
