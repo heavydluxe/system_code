@@ -26,10 +26,10 @@
 
 ;; Orgmode colorful bits and bobs
 (setq org-todo-keyword-faces
-    '(("TODO" . (:foreground "brightwhite" :background "color-196"))
+    '(("TODO" . (:foreground "brightwhite" :background "brightred"))
 	("InProc" . (:foreground "black" :background "brightgreen"))
-	("PROJECT" . (:foreground "brightwhite" :background "color-166"))
-	("Future" . (:foreground "while" :background "color-19"))
+	("PROJECT" . (:foreground "black" :background "brightwhite"))
+	("Future" . (:foreground "white" :background "brightblue"))
 	("Chat" . (:foreground "black" :background "brightyellow"))
     ("DONE" . (:foreground "brightblack" :background "black"))))
 
@@ -54,12 +54,6 @@
 
 ;; deft notes information
 (custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(org-agenda-files
-   '("/Users/dluxe/sbemode/orgmode/defts/HomeNetworkNotes.org" "/Users/dluxe/sbemode/orgmode/defts/PersonalLearning.org" "/Users/dluxe/sbemode/orgmode/defts/PersonalStrategy.org" "/Users/dluxe/sbemode/orgmode/home-do.org" "/Users/dluxe/sbemode/orgmode/portlandtoday.org" "/Users/dluxe/sbemode/orgmode/work-do.org"))
  '(package-selected-packages '(deft)))
 (setq deft-extensions '("txt" "org" "md"))
 (setq deft-directory "~/sbemode/orgmode/defts")
@@ -69,15 +63,14 @@
 ;; MELPA Package Downloads
 (require 'package)
 (add-to-list 'package-archives
-             '("melpa-stable" . "https://stable.melpa.org/packages/"))
+    '("melpa-stable" . "https://stable.melpa.org/packages/"))
 (package-initialize)
 
 ;; Custom Keybinding
 (global-set-key (kbd "C-c t") 'org-sparse-tree)
 (global-set-key (kbd "C-x C-d") 'deft)
-(custom-set-faces
+(custom-set-faces)
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )

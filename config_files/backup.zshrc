@@ -1,6 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 # Path to your Oh My Zsh installation.
-plugins=(1password git docker brew sudo web-search copyfile zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git brew sudo zsh-autosuggestions zsh-syntax-highlighting)
 export ZSH="$HOME/.oh-my-zsh"
 source $ZSH/oh-my-zsh.sh
 
@@ -13,9 +13,6 @@ zstyle ':omz:update' frequency 14
 # Uncomment the following line to enable command auto-correction.
 ENABLE_CORRECTION="true"
 
-# Preferred editor for local and remote sessions
-export EDITOR='emacs'
-
 # Set working directory
 cd ~/sbemode
 
@@ -25,8 +22,9 @@ alias sb='cd ~/sbemode/orgmode && emacs --eval "(progn (org-agenda nil \"a\") (o
 
 ## AI-related aliases for ollama and fabric
 alias ol='ollama'
-alias olon='brew services restart ollama && ollama run llama3.1:latest'
+alias olon='brew services restart ollama'
 alias oll='ollama run llama3.1:latest'
+alias olp='ollama run py:latest'
 alias olv='ollama run llama3.1:latest --verbose'
 alias oloff='brew services stop ollama'
 alias ls='ls -hal'
